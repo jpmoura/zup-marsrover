@@ -12,7 +12,7 @@ public class Main {
 	public static void main(String[] args) {
 		
 		if(args.length < 3) System.out.println("Insufficient arguments");
-		else if(args.length > 2 && (args.length - 1) % 2 > 0) System.out.println("It is necessary to inform a pair of arguments (initial position, commands sequence) for each vehicle.");
+		else if(args.length > 2 && (args.length - 1) % 2 > 0) System.out.println("It is necessary to inform a pair of arguments (initial position, commands sequence) for each vehicleTest.");
 		else
 		{
 			// Parsing environment maximum coordinates
@@ -22,7 +22,7 @@ public class Main {
 			
 			for(int index = 1; index < args.length; ++index)
 			{
-				// Parsing initial vehicle position
+				// Parsing initial vehicleTest position
 				int initialX = Character.getNumericValue(args[index].charAt(0));
 				int initialY = Character.getNumericValue(args[index].charAt(2));
 				char initialHeading = args[index].charAt(4);

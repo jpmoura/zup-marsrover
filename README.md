@@ -77,3 +77,6 @@ Project > Properties > Run/Debug Settings
 
 You can select the Main class and click on New or Edit button to manage the arguments
 in the new window that will open.
+
+The tests cases were developed in JUnit. You need to check if your IDE can run
+JUnit Test Cases.
