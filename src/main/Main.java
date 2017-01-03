@@ -11,13 +11,6 @@ public class Main {
 	
 	public static void main(String[] args) {
 		
-//		args = new String[5];
-//		args[0] = "5 5";
-//		args[1] = "1 2 N";
-//		args[2] = "LMLMLMLMM";
-//		args[3] = "3 3 E";
-//		args[4] = "MMRMMRMRRM";
-		
 		if(args.length < 3) System.out.println("Insufficient arguments");
 		else if(args.length > 2 && (args.length - 1) % 2 > 0) System.out.println("It is necessary to inform a pair of arguments (initial position, commands sequence) for each vehicle.");
 		else
@@ -38,9 +31,11 @@ public class Main {
 				rover.execute(args[++index]);
 				System.out.println(rover.toString());
 			}
+			
+			System.exit(0);
 		}
-
-		System.exit(0);
+		
+		System.exit(1);
 	}
 
 }

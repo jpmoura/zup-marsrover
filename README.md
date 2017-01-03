@@ -1,5 +1,6 @@
 # zup-marsrover
-This project is a Java implementation of the Zup's developer test.
+This project is a Java implementation of the Zup's developer test. It was
+build in Eclipse IDE Mars.1 Release (4.5.1) with JRE 1.8.0.
 
 ## Introduction
 
@@ -43,13 +44,36 @@ The output for each rover should be its final co-ordinates and heading.
 
 Test Input:
 
-5 5 </br>
-1 2 N</br>
-LMLMLMLMM</br>
-3 3 E</br>
+5 5  
+1 2 N  
+LMLMLMLMM  
+3 3 E  
 MMRMMRMRRM
 
 Expected Output:
 
-1 3 N</br>
+1 3 N  
 5 1 E
+
+## Usage
+
+The application expects at least 3 arguments:
+
+* The up-right coordinates of the environment;
+* One rover initial coordinates (Inital X Inital Y Heading direction);
+* One rover instructions (Only  'M', 'L' and 'R' characters are accepted).
+
+For each additional rover it is required to inform also its initial coordinates
+and instructions. If the number of arguments is different of (x-1) / 2 = 0, so
+there are insufficient number of arguments and the application will exit with
+code equals 1. If everything its ok, the application will exit with code equals
+0.
+
+If you are using the Eclipse IDE you can configure the arguments by following:
+
+```
+Project > Properties > Run/Debug Settings
+```
+
+You can select the Main class and click on New or Edit button to manage the arguments
+in the new window that will open.
